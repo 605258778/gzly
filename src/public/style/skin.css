@@ -1,0 +1,1221 @@
+﻿/*author：hzy
+2016/5/17*/
+/*全局样式*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html,
+body
+{
+    width: 100%;
+    min-width: 1423px;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    background: url(../images/fore-sys-main-bg.png) no-repeat top center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body
+{
+    background: url(../images/fore-sys-logo-bg.png) no-repeat top center;
+}
+body,
+td,
+th
+{
+    font-family: 'Microsoft YaHei';
+    font-size: 12px;
+
+    color: #fff;
+}
+a
+{
+    font-style: normal;
+
+    text-decoration: none;
+
+    color: #fff;
+    outline: none;
+}
+a:hover
+{
+    color: #f60;
+
+    text-decoration: none;
+}
+img
+{
+    border: 0;
+}
+input[type='radio'],
+input[type='button']
+{
+    vertical-align: middle;
+}
+input,
+form,
+textarea,
+select
+{
+    border: 0;
+    outline: none;
+    background: none;
+}
+input[type='radio'],
+input[type='checkbox']
+{
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-top: 1px \9;
+    padding: 0;
+}
+ul li
+{
+    list-style: none;
+}
+.clear:after
+{
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: '\0020';
+}
+.clear
+{
+    *zoom: 1;
+}
+.f-left
+{
+    float: left;
+}
+.f-right
+{
+    float: right;
+}
+
+/*顶部*/
+.fore-sys-head
+{
+    position: relative;
+
+    width: 100%;
+    height: 95px;
+}
+.fore-sys-update
+{
+    font-size: 13px;
+    line-height: 38px;
+
+    position: absolute;
+    top: 30px;
+    left: 10px;
+
+    padding: 0 10px;
+
+    cursor: pointer;
+
+    color: #fff;
+    border-radius: 3px;
+    background: rgba(0,0,0,.3);
+    background: url(../images/fore-sys-glassbg-30.png) repeat\9;
+
+    z-index: 2;
+}
+.fore-sys-update .icon
+{
+    display: block;
+    float: left;
+
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px 0 0;
+
+    background: url(../images/fore-sys-update-icon.png) no-repeat center center;
+}
+.fore-sys-user
+{
+    font-size: 13px;
+    line-height: 38px;
+
+    position: absolute;
+    top: 30px;
+    right: 10px;
+
+    padding: 0 15px;
+
+    cursor: pointer;
+
+    color: #fff;
+    border-radius: 3px;
+    background: rgba(0,0,0,.3);
+    background: url(../images/fore-sys-glassbg-30.png) repeat\9;
+
+    z-index: 2;
+}
+.fore-sys-user .icon
+{
+    display: block;
+    float: left;
+
+    width: 20px;
+    height: 20px;
+    margin: 8px 10px 0 0;
+
+    background: url(../images/fore-sys-user-icon.png) no-repeat center center;
+}
+.fore-sys-logo
+{
+    position: relative;
+
+    width: 100%;
+    text-align: center;
+    height: 95px;
+    margin: 0 auto;
+}
+.fore-sys-logo .logo {
+    display: inline-block;
+    width: 738px;
+    height: 110px;
+
+    background: url(../images/fore-sys-logo.png) no-repeat left center;
+}
+.fore-sys-logo .label
+{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    padding: 0 10px;
+
+    color: #fff;
+    border-radius: 3px;
+    background: rgba(0,0,0,.4);
+    background: url(../images/fore-sys-glassbg-40.png) repeat\9;
+    cursor: default;
+}
+
+/*主体布局*/
+.fore-sys-main
+{
+    width: 100%;
+}
+.fore-sys-top {
+    width: 100%;
+}
+.fore-sys-container
+{
+    margin: 0 5px;
+}
+.fore-sys-left
+{
+    float: left;
+
+    width: 55%;
+}
+.fore-sys-right
+{
+    float: right;
+
+    width: 45%;
+}
+.fore-sys-main-container
+{
+    max-height: 895px;
+    padding: 10px 5px 0 5px;
+}
+
+/*模块*/
+.fore-sys-ibox
+{
+    position: relative;
+
+    width: 100%;
+    margin-bottom: 10px;
+
+    background: url(../images/fore-sys-glassbg-30.png) repeat\9;
+    background: rgba(0,0,0,.3);
+}
+.fore-sys-ibox-container
+{
+    padding: 15px;
+}
+/*模块布局*/
+.fore-sys-ibox-layout-top
+{
+    display: table;
+
+    width: 100%;
+    padding: 10px 0;
+}
+.fore-sys-ibox-layout-left,.fore-sys-ibox-layout-right
+{
+    display: table-cell;
+}
+.fore-sys-ibox-layout-container
+{
+    padding: 0 10px;
+}
+.fore-sys-layout-middle
+{
+    vertical-align: middle;
+}
+/*装饰角*/
+.fore-sys-ibox-corner {
+    z-index: 2;
+}
+.fore-sys-ibox-corner span
+{
+    position: absolute;
+
+    display: block;
+
+    width: 12px;
+    height: 12px;
+
+    border: 3px solid rgba(236,236,236,.5);
+    border: 3px solid #ececec\9;
+    z-index: 2;
+}
+.fore-sys-ibox-corner span.tl
+{
+    top: 0;
+    left: 0;
+
+    border-right: none;
+    border-bottom: none;
+}
+.fore-sys-ibox-corner span.tr
+{
+    top: 0;
+    right: 0;
+
+    border-bottom: none;
+    border-left: none;
+}
+.fore-sys-ibox-corner span.bl
+{
+    bottom: 0;
+    left: 0;
+
+    border-top: none;
+    border-right: none;
+}
+.fore-sys-ibox-corner span.br
+{
+    right: 0;
+    bottom: 0;
+
+    border-top: none;
+    border-left: none;
+}
+
+/*筛选器*/
+.fore-sys-filter-inline {
+    line-height: 28px;
+}
+.fore-sys-filter-inline label {
+    display: inline-block;
+}
+.fore-sys-filter-inline ul {
+    display: inline-block;
+}
+.fore-sys-filter-inline ul li {
+    display: inline-block;
+    padding: 0 6px;
+}
+.fore-sys-filter-inline ul li.line {
+    display: inline-block;
+    padding: 0;
+    margin-top: 7px;
+    width: 1px;
+    height: 12px;
+    background: rgba(255,255,255,.5);
+    background: #8db8c4\9;
+}
+.fore-sys-filter-inline ul li a {
+    font-size: 12px;
+    display: block;
+    height: 28px;
+    margin: 2px 0;
+    padding: 0 10px;
+    line-height: 28px;
+    color: #fff;
+}
+.fore-sys-filter-inline ul li a:hover,.fore-sys-filter-inline ul li a.selected {
+    background: rgba(0,0,0,.3);
+    background: url(../images/fore-sys-glassbg-30.png) repeat\9;
+    border-radius: 14px; 
+}
+.fore-sys-filter-title {
+    font-size: 12px;
+    line-height: 28px;
+    display: block;
+    margin-bottom: -28px;
+}
+.fore-sys-filter-content {
+    padding-left: 75px; 
+}
+.fore-sys-filter-inline .sec-list {
+    display: none;
+}
+/*新增筛选条件操作20160713*/
+.fore-sys-filter-inline .select-result-box {
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+.fore-sys-filter-inline .select-result-box a.select-result {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0 2px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 12px;
+    background: rgba(0,0,0,.3);
+}
+.select-result-box a.select-result .clear-icon {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    line-height: 6px;
+    margin-top: -3px;
+    padding: 3px;
+    height: 9px;
+    width: 9px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.select-result-box a.select-result:hover {
+    color: #ddd;
+    background: rgba(255,255,255,.3);
+}
+.select-result-box a.select-result:hover span.clear-icon {
+    background: rgba(0,0,0,.3);
+    color: #fff;
+} 
+.select-result-box a.select-result span.clear-icon:hover {
+    background: red;
+}
+a.selcet-clear {
+    font-size: 13px;
+    line-height: 28px;
+    display: inline-block;
+    padding: 0 20px;
+    border-radius: 3px;
+    background: rgba(0,0,0,.4);
+    background: url(../images/fore-sys-glassbg-40.png) repeat;
+    cursor: pointer;
+}
+/*标题*/
+.fore-sys-ibox-title {
+    font-size: 24px;
+    font-weight: normal;
+}
+.fore-sys-ibox-text p
+{
+    line-height: 24px;
+}
+.fore-sys-ibox-title .title
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+.fore-sys-ibox-text span.title
+{
+    padding-right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.fore-sys-ibox-title h2,
+.fore-sys-ibox-title h3
+{
+    display: inline-block;
+    float: left;
+}
+.fore-sys-ibox-title h3
+{
+    font-size: 13px;
+    font-weight: normal;
+
+    margin-top: 2px;
+    margin-left: 5px;
+    padding-bottom: 8px;
+
+    background: url(../images/fore-sys-ibox-title-bg.png) repeat-x bottom left;
+}
+/*地图模块标题*/
+.fore-sys-map-title
+{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+}
+/*按钮*/
+.fore-sys-ibox-text .fore-sys-more-btn {
+    float: none;
+    display: inline-block;
+    margin-top: 3px;
+}
+.fore-sys-export-icon,.fore-sys-excel-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    float: right;
+    cursor: pointer;
+    background: url(../images/export-icon.png) no-repeat center center;
+}
+.fore-sys-excel-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    float: right;
+    cursor: pointer;
+    background: url(../images/fore-sys-excel-icon.png) no-repeat center center;
+}
+.fore-sys-pic-upload-btn,.fore-sys-pic-returnup-btn {
+    position: fixed;
+    bottom: 75px;
+    right: 25px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: rgba(0,0,0,.6) url(../images/go-top-btn.png) no-repeat center center;
+    background: #999 url(../images/go-top-btn.png) no-repeat center center\9;
+    z-index: 1
+}
+.fore-sys-pic-returnup-btn {
+    bottom: 10px;
+    background: rgba(0,0,0,.6) url(../images/upload-btn.png) no-repeat center center;
+    background: #999 url(../images/upload-btn.png) no-repeat center center\9;
+}
+.fore-sys-return-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.fore-sys-more-btn
+,.fore-sys-return-btn
+{
+    font-size: 13px;
+    line-height: 30px;
+
+    display: block;
+    float: right;
+
+    padding: 0 20px;
+
+    color: #fff;
+    border-radius: 3px;
+    background: rgba(0,0,0,.4);
+    background: url(../images/fore-sys-glassbg-40.png) repeat;
+     cursor: pointer;
+}
+
+/*下拉选择器*/
+.fore-sys-select
+{   
+
+    z-index: 2;
+    position: absolute;
+
+    cursor: pointer;
+}
+.fore-sys-select .trigger
+{
+    border-radius: 3px;
+    background: url(../images/fore-sys-glassbg-40.png) repeat\9;
+    background: rgba(0,0,0,.4);
+}
+.fore-sys-select .trigger:after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: url(../images/fore-sys-glassbg-0.png) repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.fore-sys-select .trigger > .title
+{
+    font-size: 13px;
+    line-height: 30px;
+
+    padding: 0 50px 0 10px;
+
+    color: #fff;
+}
+.fore-sys-select .trigger
+{
+    position: relative;
+}
+.fore-sys-select .trigger > .icon
+{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+
+    display: block;
+
+    width: 12px;
+    height: 6px;
+
+    -webkit-transition: all .3s ease-out;
+       -moz-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+
+    background: #ddd;
+    background: url(../images/fore-sys-select-icon-a.png) no-repeat center center;
+}
+.fore-sys-select:hover .trigger > .icon
+{
+    top: 14px;
+
+    -webkit-transform: rotate(180deg); /* Safari 和 Chrome */
+       -moz-transform: rotate(180deg);    /* Firefox */
+        -ms-transform: rotate(180deg);     /* IE 9 */
+         -o-transform: rotate(180deg);      /* Opera */
+            transform: rotate(180deg);
+
+    background: url(../images/fore-sys-select-icon-b.png) no-repeat center center\9;
+}
+.fore-sys-select .dropdown
+{   
+    position: absolute;
+    top: 35px;
+}
+
+/*专题下拉*/
+.fore-sys-select.topic-select
+{
+    font-size: 14px;
+    position: fixed!important;
+
+    top: 30px;
+    right: 10px;
+
+    width: 215px;
+    z-index: 3;
+}
+.fore-sys-select.topic-select .trigger {
+    background: url(../images/fore-sys-glassbg-30.png) repeat\9;
+    background: rgba(0,0,0,.30);
+}
+/*新增：专题下拉动态背景20160713*/
+.fore-sys-select.topic-select.dark .trigger {
+    background: url(../images/fore-sys-glassbg-75.png) repeat\9;
+    background: rgba(0,0,0,.75);
+}
+.fore-sys-select.topic-select .trigger > .title
+{
+    line-height: 40px;
+
+    padding: 0 0 0 20px;
+}
+.fore-sys-select.topic-select .trigger > .icon
+{
+    top: 16px;
+    right: 15px;
+
+    width: 21px;
+    height: 11px;
+
+    background: url(../images/fore-sys-select-icon-1-a.png) no-repeat center center;
+}
+.fore-sys-select.topic-select:hover .trigger > .icon
+{
+    background: url(../images/fore-sys-select-icon-1-b.png) no-repeat center center\9;
+}
+.fore-sys-select.topic-select .dropdown
+{
+    top: 45px;
+    padding: 15px;
+
+    border-radius: 3px;
+    background: #1b7255;
+}
+.fore-sys-select.topic-select .dropdown ul li
+{
+    line-height: 30px;
+
+    position: relative;
+
+    text-indent: 30px;
+
+    border-top: 1px solid #609d88;
+}
+.fore-sys-select.topic-select .dropdown ul li:before
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    display: block;
+
+    width: 5px;
+    height: 5px;
+
+    content: '';
+
+    border: 2px solid #a2f4db;
+}
+.fore-sys-select.topic-select .dropdown ul.sec-list > li
+{
+    text-indent: 60px;
+}
+.fore-sys-select.topic-select .dropdown ul.fir-list > li:before
+{
+    border-radius: 50%;
+}
+.fore-sys-select.topic-select .dropdown ul.sec-list > li:before
+{
+    left: 40px;
+
+    background: #a2f4db;
+}
+.fore-sys-select.topic-select .dropdown ul li.first
+{
+    border: none;
+}
+.fore-sys-select.topic-select .dropdown ul.sec-list {
+    display: none;
+}
+/*政区切换下拉*/
+.fore-sys-select.area-select
+{
+    top: 55px;
+    left: 15px;
+}
+.fore-sys-select.area-select .dropdown
+{
+    padding: 5px 10px 10px 10px;
+
+    border: 1px solid #75b9d6;
+    border-radius: 3px;
+    background: #3080a2;
+}
+.fore-sys-select.area-select .dropdown .title
+{
+    font-size: 12px;
+    line-height: 30px;
+
+    color: #fff;
+}
+.fore-sys-select.area-select .dropdown ul
+{
+    padding-left: 25px;
+}
+.fore-sys-select.area-select .dropdown ul li
+{
+    float: left;
+
+    margin: 5px 2px;
+}
+.fore-sys-select.area-select .dropdown ul li a
+{
+    font-size: 13px;
+
+    margin: 4px;
+    padding: 5px;
+
+    color: #fff;
+}
+.fore-sys-select.area-select .dropdown ul li a.selected
+{
+    background: #196b8d;
+}
+.fore-sys-select.area-select .dropdown .sec-list
+{
+    display: none;
+}
+/*森林覆盖率下拉*/
+.fore-sys-select.forestcover-select
+{
+    top: 55px;
+    left: 145px;
+}
+.fore-sys-select.forestcover-select .dropdown .list {
+    display: block;
+    border-radius: 3px;
+    padding: 3px 0px;
+    background: #3080a2;
+    border: 1px solid #75b9d6;
+    overflow: hidden;
+} 
+.fore-sys-select.forestcover-select .dropdown .list li a {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px 0px;
+    text-indent: 10px;
+    color: #fff;
+    font-size: 13px;
+}
+.fore-sys-select.forestcover-select .dropdown .list li a.selected {
+    background: #196b8d;
+}
+/*地图*/
+.fore-sys-map
+{
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+/*图例*/
+.fore-sys-legend
+{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+
+    width: 60px;
+    height: 200px;
+
+    cursor: pointer;
+
+    background: url(../images/fore-sys-legend-bg.png);
+    z-index: 2;
+}
+/*仪表盘20160721新增*/
+.fore-sys-dashboard-box {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 3px;
+}
+/*饼图列表*/
+.fore-sys-ibox-chart-list
+{
+    width: 100%;
+}
+.fore-sys-ibox-chart-list li
+{
+    font-size: 13px;
+    line-height: 17px;
+
+    overflow: hidden;
+
+    padding: 5px 0;
+
+    cursor: default;
+    text-align: left;
+    white-space: nowrap;
+       text-overflow: ellipsis;
+
+    color: #fff;
+    border-bottom: 1px solid #fff;
+
+    -o-text-overflow: ellipsis;
+}
+.fore-sys-ibox-chart-list li span  {
+    display: block;
+}
+.fore-sys-ibox-chart-list li.end
+{
+    border: none;
+}
+/*列表中进度条*/
+.fore-sys-progressbar
+{
+    width: 100%;
+}
+.fore-sys-progressbar .base
+{
+    width: 100%;
+    height: 6px;
+
+    border-radius: 4px;
+    background: url(../images/fore-sys-glassbg-50.png) repeat\9;
+    background: rgba(0,0,0,.5);
+}
+.fore-sys-progressbar .progress
+{
+    height: 6px;
+
+    border-radius: 4px;
+    background: url(../images/fore-sys-progressbar-bg.png) repeat\9;
+    background: rgba(252,255,0,.8);
+}
+.fore-sys-progressbar .date
+{
+    font-size: 12px;
+    line-height: 11px;
+
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 5px 0;
+
+    text-align: center;
+
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+.fore-sys-progressbar .date:before
+{
+    position: absolute;
+    top: 5px;
+    left: -20px;
+
+    display: block;
+
+    width: 50%;
+
+    content: '';
+
+    border-bottom: 1px solid #fff;
+}
+.fore-sys-progressbar .date:after
+{
+    position: absolute;
+    top: 5px;
+    right: -20px;
+
+    display: block;
+
+    width: 50%;
+
+    content: '';
+
+    border-bottom: 1px solid #fff;
+}
+/*饼图*/
+.fore-sys-pie-chart
+{
+    width: 100%;
+}
+/*数据表格*/
+.fore-sys-tab-box {
+    margin: 15px auto;
+}
+.scroll-y {
+    overflow-y: auto; 
+}
+.scroll-x {
+    overflow-x: auto;
+}
+.fore-sys-tab .title {
+    width: 100%;
+    color: #fff;
+    font-size: 13px;
+    line-height: 37px;
+    text-align: center;
+}
+.fore-sys-tab
+{
+    width: 100%;
+
+    border-collapse: collapse;
+}
+.fore-sys-tab td
+{
+    font-size: 12px;
+    line-height: 25px;
+
+    padding: 0 10px;
+
+    text-align: center;
+
+    color: #fff;
+    border: none;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    white-space: nowrap;
+}
+.fore-sys-tab thead td
+{
+    line-height: 27px;
+
+    background: url(../images/fore-sys-glassbg-30.png) repeat\9;
+    background: rgba(0,0,0,.3);
+}
+.fore-sys-tab td.left
+{
+    text-align: left;
+}
+.fore-sys-tab td.right
+{
+    text-align: right;
+}
+.fore-sys-tab td.b-n
+{
+    border-right: none;
+}
+.fore-sys-tab tr.color td
+{
+    background: #45c268;
+}
+.fore-sys-tab .footnote td
+{
+    line-height: 37px;
+
+    padding: 0;
+
+    text-align: right;
+
+    border: none;
+}
+/*图片详情轮播*/
+.fore-sys-location {
+    line-height: 40px;
+    font-size: 15px;
+}
+#fore-sys-gallery {
+    width: 1100px;
+    padding-top: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+#fore-sys-gallery ul,
+#fore-sys-gallery li
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+#fore-sys-gallery img
+{
+    vertical-align: top;
+
+    border: none;
+}
+
+#fore-sys-gallery .fore-sys-imgSet
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 1000px;
+    height: 680px;
+    margin: 0 auto;
+}
+
+#fore-sys-gallery .fore-sys-imgSet .fore-sys-imgWin
+{
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#fore-sys-gallery .fore-sys-imgSet .fore-sys-imgWin img
+{
+    width: 100%;
+    height: 100%;
+}
+#fore-sys-gallery .fore-sys-imgSet .fore-sys-page
+{
+    font: 11px tahoma bold;
+
+    position: absolute;
+    bottom: 0;
+
+    padding: 5px;
+
+    color: #fff;
+}
+#fore-sys-gallery .fore-sys-imgSet .fore-sys-page .fore-sys-current
+{
+    color: #ff0;
+}
+#fore-sys-gallery .fore-sys-imgSet .fore-sys-page .fore-sys-total
+{
+    color: #fc0;
+}
+#fore-sys-gallery .fore-sys-prevBtn
+{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+
+    margin-top: -95px;
+
+    cursor: pointer;
+}
+#fore-sys-gallery .fore-sys-nextBtn
+{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+
+    margin-top: -95px;
+
+    cursor: pointer;
+}
+
+#fore-sys-gallery .fore-sys-thumSet
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 819px;
+    margin: 0 auto;
+    margin-top: 10px; 
+}
+#fore-sys-gallery .fore-sys-thumSet .fore-sys-thumMove
+{
+    font-size: 0;
+
+    position: relative;
+
+    white-space: nowrap;
+}
+#fore-sys-gallery .fore-sys-thumSet .fore-sys-thumMove li
+{
+    display: inline;
+
+    margin-right: 8px;
+}
+#fore-sys-gallery .fore-sys-thumSet .fore-sys-thumMove li a img
+{
+    width: 110px;
+    height: 73px;
+}
+#fore-sys-gallery .fore-sys-prevPageBtn
+{
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+
+    cursor: pointer;
+}
+#fore-sys-gallery .fore-sys-nextPageBtn
+{
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+
+    cursor: pointer;
+}
+#fore-sys-gallery .fore-sys-thumSet .fore-sys-thumLine
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100px;
+    height: 63px;
+    
+    border: 5px solid #666\9;
+    border: 5px solid rgba(0,0,0,.6);
+}
+.fore-sys-textBox {
+    position: absolute;
+    top: 500px;
+}
+.fore-sys-text {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: url(../images/fore-sys-glassbg-30.png) repeat\9;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+.fore-sys-text h2 {
+    padding: 10px 0 0 10px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+}
+.fore-sys-text p {
+    padding: 0 10px 10px 10px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.fore-sys-text p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.fore-sys-downloadBtn {
+    display: block;
+    line-height: 35px;
+    padding: 0 10px;
+    background: url(../images/fore-sys-glassbg-30.png) repeat\9;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.fore-sys-downloadBtn .icon {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    margin-left:10px;
+    vertical-align: middle;
+    background: url(../images/download-btn-hover.png) no-repeat center;
+}
+.fore-sys-downloadBtn:hover {
+    color: #fff;
+    background: url(../images/fore-sys-glassbg-50.png) repeat\9;
+    background: rgba(0,0,0,.6);
+}
+.fore-sys-thumSet-wrap {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+}
+
+/*图片瀑布流*/
+.fore-sys-masonry-wrap {
+    margin: 0px auto;
+    padding-top: 20px;
+}
+#listing .post{
+    padding:10px 5px;
+    text-align:justify;
+    float:left;
+}
+.post{
+    -webkit-box-sizing: border-box;
+    width:320px;
+    text-align:center;
+}
+.post .post-content {
+    padding: 5px;
+    background: url(../images/fore-sys-glassbg-30.png) repeat\9;
+    background: rgba(0,0,0,.3);
+}
+.post .post-content:hover {
+    background: url(../images/fore-sys-glassbg-50.png) repeat\9;
+    background: rgba(0,0,0,.6);
+}
+.post a{
+    text-align:center;
+    display:block;
+}
+.post a.title {
+    line-height: 20px;
+}
+.post img {
+    border:0;
+    width: 300px;
+}
